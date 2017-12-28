@@ -1,0 +1,29 @@
+{
+   "name": "gobuddysite",
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
+      "node-sass-chokidar": "0.0.3",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0",
+      "react-scripts": "1.0.17",
+      "semantic-ui-react": "^0.77.1"
+   },
+   "scripts": {
+      "build-css": "node-sass-chokidar src/ -o src/",
+      "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+   },
+   "devDependencies": {
+      "eslint": "^4.14.0",
+      "eslint-config-standard": "^11.0.0-beta.0",
+      "eslint-plugin-import": "^2.8.0",
+      "eslint-plugin-node": "^5.2.1",
+      "eslint-plugin-promise": "^3.6.0",
+      "eslint-plugin-react": "^7.5.1",
+      "eslint-plugin-standard": "^3.0.1"
+   }
+}

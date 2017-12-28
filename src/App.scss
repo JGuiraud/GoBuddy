@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+.App {
+  text-align: center;
+  background-image: url('assets/background.png');
+  background-size: cover;    
+}
+
+.reasons-container {
+   background-color: #006983;
+   height: 40vh;
+   padding: 20px;
+   color: white;
+   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+   padding-top: 9vh;
+   .cardLanding {
+      h4 {
+         font-family: arial;
+         color: #DB9600;
+         font-weight: bold;
+         font-family: 'Roboto', sans-serif;         
+      }
+      p {
+         color: white;
+         font-weight: 500;
+         font-family: 'Roboto', sans-serif;
+      }
+   }
+}
+
+.drop {
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   .drop-receiver {
+      width: 60vw;
+      display: flex;
+      justify-content: left;
+      margin-top: -.8vh;
+      .ui.compact.search.selection.dropdown {
+         margin-right: .3vw;
+         .icon {
+            display: none;
+         }
+      }
+      .ui.compact.search.selection.dropdown:hover {
+         background: #006983;
+         border: 1px solid #006983;
+         transition: all .5s;
+         color: white;
+         .search {
+            cursor: pointer;
+         }
+         .text {
+            cursor: pointer;
+            color: white;
+            transition: all .5s;            
+         }
+      } 
+   }
+}
+
+.ui.search.dropdown {
+   .menu.transition.visible {
+      width: auto;
+      height: auto;
+   }
+}
+
+.mega-search-container {
+   padding-bottom: 5vh;
+   .link-club-known {
+      text-align: left;
+   }
+      .search-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: wrap;
+      .search-bar {
+         height: 12vh;
+         display: flex;
+         justify-content: center; 
+         align-items: center;
+         width: auto;
+         #custom-search-input{
+            position: absolute;
+            padding: 3px;
+            border: solid 1px rgb(202, 202, 202);
+            border-radius: 5px;
+            background-color: #fff;
+            width: 60vw;
+            box-shadow: 0 0 4em rgb(177, 177, 177);
+            .input-group {
+               display: flex;
+               justify-content: center;
+               height: 70px;
+               span {
+                  display: flex;
+                  align-items: center;
+                  .icon {
+                     height: auto;
+                     color: #E7E6E5 !important;
+                     margin-left: 10px;
+                     font-size: 30px;
+                  }
+               }
+            }
+            input{
+               border: 0;
+               box-shadow: none;
+               font-size: 18px;
+               font-family: 'Roboto', sans-serif;
+               
+            }
+            .input-group-btn {
+               display: flex;
+               align-items: center;
+               button {
+                  height: 80%;
+                  background: #006983;
+                  margin-right: 6px;
+                  width: 15vh;
+                  img {
+                     width: 60px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+.ui.inverted.segment.menu-top {
+   margin-top: 0;
+   border-radius: 0;
+   // background-color: #006983;
+   background-color: transparent;
+   padding-top: 0;
+   padding-bottom: 0;
+   height: 4vh;
+   margin: 0;
+}
+
+.ui.inverted.pointing.secondary.menu {
+   height: 100%;
+   border: none;
+   display: flex;
+   align-items: center;
+   a,.dropdown {
+      height: 100%;
+      color: #006983 !important;
+   }
+}
+
+.landingTop {
+   // padding-top: 4vh; 
+   // padding-bottom: 2vh;
+   .container-home-top {
+      .logoTop {
+         padding-top: 3vh;
+         padding-bottom: 4vh;
+      }
+      .buble1 {
+         padding-top: 12vh;
+      }
+      .buble2 {
+         margin-top: -12vh;
+      }
+   }
+}
+
+.i.inverted.bordered.icon, i.inverted.circular.icon {
+   background-color: #006983 !important;
+}
+
+.circular.inverted.icon.colorRounderIcons {
+   background: #006983;
+}
+
+@media only screen and (max-width: 767px) {
+   .ui.container {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+   }
+}
