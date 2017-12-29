@@ -6,8 +6,8 @@
 
 .reasons-container {
   background-color: #006983;
-  height: 40vh;
-  padding: 20px;
+  height: auto;
+  padding: 60px;
   color: white;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -16,90 +16,143 @@
     font-family: arial;
     color: #DB9600;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif; }
+    font-family: "Roboto", sans-serif; }
   .reasons-container .cardLanding p {
     color: white;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif; }
+    font-family: "Roboto", sans-serif; }
 
 .drop {
   text-align: center;
   display: flex;
   justify-content: center; }
   .drop .drop-receiver {
-    width: 60vw;
+    width: 65vw;
     display: flex;
     justify-content: left;
     margin-top: -.8vh; }
-    .drop .drop-receiver .ui.compact.search.selection.dropdown {
-      margin-right: .3vw; }
-      .drop .drop-receiver .ui.compact.search.selection.dropdown .icon {
+    .drop .drop-receiver .ui.compact.selection.dropdown {
+      margin-right: .3vw;
+      padding-right: 14px;
+      padding-left: 14px; }
+      .drop .drop-receiver .ui.compact.selection.dropdown .icon {
         display: none; }
-    .drop .drop-receiver .ui.compact.search.selection.dropdown:hover {
+      .drop .drop-receiver .ui.compact.selection.dropdown .text {
+        cursor: pointer;
+        color: grey;
+        transition: all .5s;
+        font-family: "Roboto", sans-serif;
+        text-align: center; }
+    .drop .drop-receiver .ui.compact.selection.dropdown:hover {
       background: #006983;
       border: 1px solid #006983;
-      transition: all .5s;
-      color: white; }
-      .drop .drop-receiver .ui.compact.search.selection.dropdown:hover .search {
-        cursor: pointer; }
-      .drop .drop-receiver .ui.compact.search.selection.dropdown:hover .text {
-        cursor: pointer;
-        color: white;
-        transition: all .5s; }
+      transition: all .5s; }
+      .drop .drop-receiver .ui.compact.selection.dropdown:hover .default.text {
+        color: white; }
+    .drop .drop-receiver .ui.compact.selection.dropdown:active .search {
+      cursor: pointer; }
 
-.ui.search.dropdown .menu.transition.visible {
+.ui.dropdown .menu.transition.visible {
   width: auto;
-  height: auto; }
+  height: auto;
+  overflow: auto; }
 
-.mega-search-container {
-  padding-bottom: 5vh; }
-  .mega-search-container .link-club-known {
-    text-align: left; }
-  .mega-search-container .search-container {
+.ui.tabular.menu + .attached:not(.top).segment, .ui.tabular.menu + .attached:not(.top).segment + .attached:not(.top).segment {
+  width: 65vw; }
+
+.ui.attached.tabular.menu {
+  border: none;
+  display: flex;
+  justify-content: stretch;
+  margin-bottom: -13px;
+  z-index: 100;
+  position: relative; }
+  .ui.attached.tabular.menu .item {
+    width: 50%;
     display: flex;
     justify-content: center;
-    flex-direction: wrap; }
-    .mega-search-container .search-container .search-bar {
-      height: 12vh;
+    border-radius: 5px;
+    background: rgba(207, 207, 207, 0.5);
+    color: #a5a5a5;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px; }
+  .ui.attached.tabular.menu .item.active {
+    background: white;
+    border: 1px solid #c4c4c4;
+    border-bottom: none;
+    color: black; }
+
+.testtt {
+  display: flex;
+  justify-content: center; }
+  .testtt .mega-search-container {
+    padding-bottom: 5vh; }
+    .testtt .mega-search-container .div {
       display: flex;
       justify-content: center;
-      align-items: center;
-      width: auto; }
-      .mega-search-container .search-container .search-bar #custom-search-input {
-        position: absolute;
-        padding: 3px;
-        border: solid 1px #cacaca;
-        border-radius: 5px;
-        background-color: #fff;
-        width: 60vw;
-        box-shadow: 0 0 4em #b1b1b1; }
-        .mega-search-container .search-container .search-bar #custom-search-input .input-group {
-          display: flex;
-          justify-content: center;
-          height: 70px; }
-          .mega-search-container .search-container .search-bar #custom-search-input .input-group span {
+      width: 70vw; }
+    .testtt .mega-search-container .ui.bottom.attached.segment.tab {
+      background: none;
+      border: none;
+      padding-top: 0px;
+      padding: 0px; }
+    .testtt .mega-search-container .link-club-known {
+      text-align: left; }
+    .testtt .mega-search-container .input-group-orange {
+      margin-bottom: 3.8vh; }
+    .testtt .mega-search-container .search-container {
+      display: flex;
+      justify-content: center; }
+      .testtt .mega-search-container .search-container .search-bar {
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto; }
+        .testtt .mega-search-container .search-container .search-bar #custom-search-input {
+          position: absolute;
+          padding: 3px;
+          border: solid 1px #c4c4c4;
+          border-radius: 5px;
+          border-top-right-radius: 0px;
+          border-top-left-radius: 0px;
+          background-color: white;
+          width: 65vw;
+          box-shadow: 0 0 4em #b1b1b1; }
+          .testtt .mega-search-container .search-container .search-bar #custom-search-input .input-group {
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            height: 65px; }
+            .testtt .mega-search-container .search-container .search-bar #custom-search-input .input-group span {
+              display: flex;
+              align-items: center; }
+              .testtt .mega-search-container .search-container .search-bar #custom-search-input .input-group span .icon {
+                height: auto;
+                color: #E7E6E5 !important;
+                margin-left: 10px;
+                font-size: 30px; }
+          .testtt .mega-search-container .search-container .search-bar #custom-search-input input {
+            background: transparent;
+            border: 0;
+            box-shadow: none;
+            font-size: 18px;
+            font-family: "Roboto", sans-serif; }
+          .testtt .mega-search-container .search-container .search-bar #custom-search-input .input-group-btn {
+            background: transparent;
             display: flex;
             align-items: center; }
-            .mega-search-container .search-container .search-bar #custom-search-input .input-group span .icon {
-              height: auto;
-              color: #E7E6E5 !important;
-              margin-left: 10px;
-              font-size: 30px; }
-        .mega-search-container .search-container .search-bar #custom-search-input input {
-          border: 0;
-          box-shadow: none;
-          font-size: 18px;
-          font-family: 'Roboto', sans-serif; }
-        .mega-search-container .search-container .search-bar #custom-search-input .input-group-btn {
-          display: flex;
-          align-items: center; }
-          .mega-search-container .search-container .search-bar #custom-search-input .input-group-btn button {
-            height: 80%;
-            background: #006983;
-            margin-right: 6px;
-            width: 15vh; }
-            .mega-search-container .search-container .search-bar #custom-search-input .input-group-btn button img {
-              width: 60px; }
+            .testtt .mega-search-container .search-container .search-bar #custom-search-input .input-group-btn button {
+              height: 80%;
+              background: #006983;
+              margin-right: 6px;
+              width: 15vh; }
+              .testtt .mega-search-container .search-container .search-bar #custom-search-input .input-group-btn button img {
+                width: 50px; }
+          .testtt .mega-search-container .search-container .search-bar #custom-search-input .input-group-btn.orange-go button {
+            background: #DB9600; }
 
 .ui.inverted.segment.menu-top {
   margin-top: 0;
@@ -119,9 +172,10 @@
     height: 100%;
     color: #006983 !important; }
 
-.landingTop .container-home-top .logoTop {
-  padding-top: 3vh;
-  padding-bottom: 4vh; }
+.landingTop .container-home-top .ui.image.logoTop {
+  padding-top: 8vh;
+  padding-bottom: 10vh;
+  width: 250px; }
 
 .landingTop .container-home-top .buble1 {
   padding-top: 12vh; }

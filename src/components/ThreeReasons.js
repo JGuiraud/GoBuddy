@@ -53,10 +53,11 @@ export default class ThreeReasons extends Component {
                            <Icon inverted name='euro' size="huge" className="colorRounderIcons" />
                         </Card.Header>
                         <br />
-                        <h4>Inscription Simplifiée</h4>
+                        <h4>100% Gratuit</h4>
                         <Card.Description>
                            <p>
-                              Vous gérez tout ! Payez comme vous le souhaitez, numérisez vos documents, programmez votre cours d'essai.
+                              Vous ne payez aucun frais supplémentaire.
+Adhérez à votre club ne vous coûte rien de plus.
                   </p>
                         </Card.Description>
                      </Card.Content>

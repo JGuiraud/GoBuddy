@@ -22,6 +22,7 @@ export default class MenuTop extends Component {
       const { activeItem } = this.state
 
       return (
+
          <Segment inverted className="menu-top">
             <Menu inverted pointing secondary>
                <Image src={logo} size='small' size="mini" spaced="left" />

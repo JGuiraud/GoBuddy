@@ -18,12 +18,12 @@ export default class Landing extends Component {
 
                <Image.Group className="container-home-top">
                   <Image className="buble1" src={buble1} size="small" />
-                  <Image className="logoTop" src={logo} size="medium" />
+                  <Image className="logoTop" src={logo} />
                   <Image className="buble2" src={buble2} size="small" />
                </Image.Group>
 
             </Container>
          </div>
       )
-   } 
+   }
 }
