@@ -4,6 +4,7 @@ import MenuTop from './components/menu'
 import Landing from './components/landing'
 import ResearchSection from './components/ResearchSection';
 import ThreeReasons from './components/ThreeReasons';
+import Footer from './components/Footer';
 
 class App extends Component {
    render() {
@@ -13,6 +14,7 @@ class App extends Component {
             <Landing />
             <ResearchSection />
             <ThreeReasons />
+            <Footer />
          </div>
       )
    }

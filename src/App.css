@@ -189,6 +189,47 @@
 .circular.inverted.icon.colorRounderIcons {
   background: #006983; }
 
+.footer {
+  height: auto;
+  background: #006983;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  .footer .footer-social-media {
+    padding-top: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .footer .footer-social-media .fotter-social-media-container {
+      width: 20vw;
+      display: flex;
+      justify-content: center;
+      justify-content: space-between; }
+      .footer .footer-social-media .fotter-social-media-container .icon {
+        color: #006983;
+        background: white;
+        box-shadow: none; }
+  .footer .footer-links ul {
+    display: inline-block;
+    padding-top: 2vh;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+    .footer .footer-links ul li {
+      display: inline;
+      list-style: none;
+      /* pour enlever les puces sur IE7 */
+      margin: 1vw; }
+      .footer .footer-links ul li a {
+        color: white !important; }
+  .footer .footer-logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vh; }
+    .footer .footer-logo img {
+      align-self: center; }
+
 @media only screen and (max-width: 767px) {
   .ui.container {
     margin-left: 0px !important;

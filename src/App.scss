@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+///// variables
 $font : 'Roboto', sans-serif;
+$gobuddy-blue: #006983;
+$gobudy-orange: #DB9600;
+/////
+
 
 .App {
   text-align: center;
@@ -8,7 +14,7 @@ $font : 'Roboto', sans-serif;
 }
 
 .reasons-container {
-   background-color: #006983;
+   background-color: $gobuddy-blue;
    height: auto;
    padding: 60px;
    color: white;
@@ -18,7 +24,7 @@ $font : 'Roboto', sans-serif;
    .cardLanding {
       h4 {
          font-family: arial;
-         color: #DB9600;
+         color: $gobudy-orange;
          font-weight: bold;
          font-family: $font;         
       }
@@ -55,8 +61,8 @@ $font : 'Roboto', sans-serif;
          }
       }
       .ui.compact.selection.dropdown:hover, {
-         background: #006983;
-         border: 1px solid #006983;
+         background: $gobuddy-blue;
+         border: 1px solid $gobuddy-blue;
          transition: all .5s;
          .default.text {
             color: white;
@@ -181,7 +187,7 @@ $font : 'Roboto', sans-serif;
                   align-items: center;
                   button {
                      height: 80%;
-                     background: #006983;
+                     background: $gobuddy-blue;
                      margin-right: 6px;
                      width: 15vh;
                      img {
@@ -191,7 +197,7 @@ $font : 'Roboto', sans-serif;
                }
                .input-group-btn.orange-go {
                   button {
-                     background: #DB9600;
+                     background: $gobudy-orange;
                      img {
                      }
                   }
@@ -221,7 +227,7 @@ $font : 'Roboto', sans-serif;
    align-items: center;
    a,.dropdown {
       height: 100%;
-      color: #006983 !important;
+      color: $gobuddy-blue !important;
    }
 }
 
@@ -242,11 +248,62 @@ $font : 'Roboto', sans-serif;
 }
 
 .i.inverted.bordered.icon, i.inverted.circular.icon {
-   background-color: #006983 !important;
+   background-color: $gobuddy-blue !important;
 }
 
 .circular.inverted.icon.colorRounderIcons {
-   background: #006983;
+   background: $gobuddy-blue;
+}
+
+.footer {
+   height: auto;
+   background: $gobuddy-blue;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   .footer-social-media {
+      padding-top: 3vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .fotter-social-media-container{
+         width: 20vw;
+         display: flex;
+         justify-content: center;
+         justify-content: space-between;
+         .icon {
+            color: $gobuddy-blue;
+            background: white;
+            box-shadow: none;
+         }
+      }
+   }
+   .footer-links {
+      ul{
+         display: inline-block;
+         padding-top: 2vh;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         li {
+            display: inline;
+            list-style: none; /* pour enlever les puces sur IE7 */
+            margin: 1vw;
+            a {
+               color: white !important;
+            }
+         }
+      }
+   }
+   .footer-logo {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2vh;
+      img {
+         align-self: center;
+      }
+   }
 }
 
 @media only screen and (max-width: 767px) {
