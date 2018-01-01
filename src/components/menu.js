@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Menu, Segment, Dropdown, Image } from 'semantic-ui-react';
-import logo from "../assets/white_logo.png";
+import logo from "../assets/gobuddy_line.svg";
 
 export default class MenuTop extends Component {
    state = {
@@ -25,7 +25,7 @@ export default class MenuTop extends Component {
 
          <Segment inverted className="menu-top">
             <Menu inverted pointing secondary>
-               <Image src={logo} size='small' size="mini" spaced="left" />
+               <Image src={logo} size='small' spaced="left" />
                <Menu.Item position='right' name='Connectez-vous' active={activeItem === 'connection'} onClick={this.handleItemClick} />
                <Menu.Item name="Clubs, c'est par là !" active={activeItem === 'clubs'} onClick={this.handleItemClick} />
                <Dropdown text={this.state.selectedCity} pointing className='link item' >
