@@ -27,7 +27,7 @@ export default class ThreeReasons extends Component {
                         <Card.Description>
                            <p>
                               Entrez vos critères et le tour est joué ! Vous trouvez le club qui correspond à vos besoins et disponibilités.
-                  </p>
+                           </p>
                         </Card.Description>
                      </Card.Content>
                   </div>
@@ -42,7 +42,7 @@ export default class ThreeReasons extends Component {
                         <Card.Description>
                            <p>
                               Vous gérez tout ! Payez comme vous le souhaitez, numérisez vos documents, programmez votre cours d'essai.
-                  </p>
+                           </p>
                         </Card.Description>
                      </Card.Content>
                   </div>
@@ -57,8 +57,8 @@ export default class ThreeReasons extends Component {
                         <Card.Description>
                            <p>
                               Vous ne payez aucun frais supplémentaire.
-Adhérez à votre club ne vous coûte rien de plus.
-                  </p>
+                              Adhérez à votre club ne vous coûte rien de plus.
+                           </p>
                         </Card.Description>
                      </Card.Content>
                   </div>
