@@ -239,4 +239,28 @@
 @media only screen and (max-width: 767px) {
   .ui.container {
     margin-left: 0px !important;
-    margin-right: 0px !important; } }
+    margin-right: 0px !important; }
+  .ui.inverted.pointing.secondary.menu {
+    flex-direction: column; }
+  .ui.inverted.segment.menu-top {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2em;
+    z-index: 10;
+    background-color: rgba(105, 104, 104, 0.5);
+    box-shadow: 0px 5px 50px black; }
+  .ui.secondary.pointing.menu .item {
+    align-self: center; }
+  .ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
+    margin-left: 0px !important; }
+  .ui.tabular.menu + .attached:not(.top).segment, .ui.tabular.menu + .attached:not(.top).segment + .attached:not(.top).segment {
+    width: 100vw; }
+  .testtt .mega-search-container {
+    padding-bottom: 5vh; }
+    .testtt .mega-search-container .div {
+      display: flex;
+      justify-content: center;
+      width: 100vw; }
+    .testtt .mega-search-container .search-container .search-bar #custom-search-input {
+      width: auto; } }
